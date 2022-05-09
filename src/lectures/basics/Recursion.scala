@@ -2,9 +2,10 @@ package lectures.basics
 
 import scala.annotation.tailrec
 
+//Lesson 5
 object Recursion extends App{
 
-  //JVm uses Stack to store partial results
+  //JVM uses Stack to store partial results
   def factorial(n:Int):Int ={
     if (n <= 1) 1
     else {

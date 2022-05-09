@@ -1,8 +1,9 @@
 package lectures.basics
 
+//Lesson 2
 object Expressions extends App {
 
-  val x =22 + 17 //Expression
+  val x = 17 + 22 //Expression
   println(x)
 
   println(17 + 22 * 8)
@@ -35,7 +36,7 @@ object Expressions extends App {
   }
 
   val aWeirdValue = (aVariable = 45) //Type of aWeirdValue is Unit == Void
-  println(aWeirdValue)
+  println(aWeirdValue) // output : ()
   //Side effects in scala is also the expressions returning unit as Everything in scala is an expression
   //Ex: printing to console, whiles, reassigning of Vars
 
@@ -49,17 +50,20 @@ object Expressions extends App {
 
 
   // 1. difference between "hello world" vs println("hello world")?
+  //Ans : "hello world" is value of string type or it is a string literal
+  //      println("hello world") is an expression and also a side effect as it returns unit i.e ()
+
   // 2.
 
   val someValue = {
     2 < 3
   }
-  println(someValue)
+  println(someValue)   //Its a boolean value
 
   val someOtherValue = {
-    if(someValue) 239 else 986
-    42
+    if(someValue) 217 else 1122
+    1008
   }
-  println(someOtherValue)
+  println(someOtherValue) //Its an integer value
 
 }

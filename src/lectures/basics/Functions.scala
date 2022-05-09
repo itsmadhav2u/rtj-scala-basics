@@ -1,6 +1,7 @@
 package lectures.basics
 import scala.annotation.tailrec
 
+//Lesson 3, 4
 object Functions extends App{
 
   def aFunction(a:String,b:Int):String={
@@ -17,6 +18,7 @@ object Functions extends App{
     else a + aRepeatedFunction(a,b-1)
   }
   println(aRepeatedFunction("Hello",3))
+
   //WHEN YOU NEED LOOPS, USE RECURSION.
   //For a normal function return type is not mandatory but for a recursive unction we need to specify return type
 
